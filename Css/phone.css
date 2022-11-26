@@ -1,0 +1,229 @@
+/* navbar styling */
+.navbar{
+    padding: 0.3rem 3rem;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu-items {
+    font-size: 0.9rem;
+    padding: 0 0.9rem;
+}
+
+.menu-items a img {
+    height: 0.7rem;
+    padding: 0 0.1em;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 0.3rem 1.5rem;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .menu-items {
+        font-size: 0.7rem;
+        padding: 0 0.7rem;
+    }
+    .menu-items a img {
+        height: 0.5rem;
+        padding: 0 0.1em;
+    }
+}
+
+
+/* banner styling */
+#banner-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 700px;
+    padding: 0 4rem;
+}
+.banner::before{
+    visibility: hidden;
+}
+
+#banner-image img{
+    width: 100%;
+}
+
+#banner-text {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+#ux-designer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+}
+
+#small-text {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 2.5rem 0;
+}
+
+/* recent work styling */
+
+#work {
+    padding: 3rem 3rem;
+}
+
+#work-container{
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: dense;
+}
+
+#work-container::before{
+    left: -30px;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+/* placing and changing the positions of images in the grid */
+.myfood-img{
+    grid-row: 1;
+}
+
+.cucoin-img{
+    grid-row: 3;
+}
+
+.archi-img{
+    grid-row: 5;
+}
+/* placing and changing the positions of images in the grid */
+
+
+/* recent work styling */
+#work-container img {
+    width: 300px;
+}
+
+.work-card .head {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.work-card .main-heading {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.work-card p {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    padding-right: 0;
+}
+
+.work-card a {
+    padding: 0.7rem 0;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+
+/* about me styling */
+#about {
+    padding: 3rem 3rem;
+}
+
+#about-container::before{
+    left: -8px;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+#about-container p,
+#about-container p span  {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+#about-container img {
+    height: 0.7rem;
+    padding: 0 0.2em;
+}
+
+#about::before {
+    visibility: hidden;
+}
+
+#about::after {
+    visibility: hidden;
+}
+
+/* contact me styling */
+#contact-container {
+    padding: 3rem 3rem;
+}
+
+.contact::before {
+    width: 10%;
+    height: 105px;
+}
+
+#contact-container span {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+#contact-container p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* footer styling */
+footer {
+    padding: 1rem 3rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+
+/* utility classes */
+.h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 4px 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding: 1.4rem 0;
+}
+
+.h3 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1rem 0 0 0;
+}
+
+.top img{
+    width: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .h3 {
+        font-size: 0.8rem;
+        line-height: 2.4rem;
+        padding: 1rem 0 0 0;
+    }
+    #contact-container p {
+        font-size: 0.7rem;
+        padding-bottom: 2rem;
+    }
+    #contact-container img{
+        display: none;
+        visibility: hidden;
+    }
+}
