@@ -144,27 +144,17 @@
 /* updating the code to make it responsive for smaller screens */
 @media screen and (max-width: 600px) {
     #banner-container {
-        height: 600px;
+        height: 630px;
         padding: 0 1.5rem;
     }
-    #banner-text {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-    #ux-designer {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-    #small-text {
-        font-size: 0.8rem;
-        line-height: 0.8rem;
-        padding: 1.5rem 0;
+    #banner-image img{
+        width: 400px;
     }
     #work-container::before{
-        left: -36px;
+        left: -42px;
     }
     #about-container::before{
-        left: -15px;
+        left: -20px;
     }
 }
 
@@ -172,8 +162,19 @@
     #work-container::before{
         display: none;
     }
+    #about-container::before{
+        display: none;
+    }
 }
 
+@media screen and (max-width: 400px) {
+    #banner-image img{
+        width: 300px;
+    }
+    #about{
+        padding: 0 2.5rem;
+    }
+}
 
 /* updating the code to make it responsive for smaller screens */
 
